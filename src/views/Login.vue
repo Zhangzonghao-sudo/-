@@ -62,12 +62,7 @@
         </el-form-item>
       </el-form>
 
-      <!-- 默认账户提示 -->
-      <div style="margin-top: 20px; padding: 16px; background: #f5f7fa; border-radius: 6px; font-size: 14px; color: #666;">
-        <div style="margin-bottom: 8px; font-weight: 600; color: #333;">默认管理员账户：</div>
-        <div>用户名: admin</div>
-        <div>密码: admin123</div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -130,12 +125,6 @@ onMounted(() => {
   // 如果已经登录，直接跳转到仪表板
   if (authStore.isAuthenticated) {
     router.push('/dashboard')
-  }
-  
-  // 开发环境下自动填充默认账户信息
-  if (import.meta.env.DEV) {
-    loginForm.username = 'admin'
-    loginForm.password = 'admin123'
   }
 })
 </script>

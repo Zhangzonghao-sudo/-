@@ -104,13 +104,13 @@
             <template #title>APP用户管理</template>
           </el-menu-item>
 
-          <el-menu-item
+          <!-- <el-menu-item
             v-if="authStore.isAdmin"
             index="/analytics"
           >
             <el-icon><TrendCharts /></el-icon>
             <template #title>数据分析</template>
-          </el-menu-item>
+          </el-menu-item> -->
 
           <el-menu-item
             v-if="authStore.isAdmin"
@@ -135,13 +135,7 @@
             <el-menu-item index="/mall/stock-alert">库存提醒</el-menu-item>
           </el-sub-menu>
 
-          <el-menu-item
-            v-if="authStore.isAdmin"
-            index="/test-charts"
-          >
-            <el-icon><DataBoard /></el-icon>
-            <template #title>图表测试</template>
-          </el-menu-item>
+
           
           <el-menu-item
             v-if="authStore.isAdmin"
@@ -151,13 +145,14 @@
             <template #title>高级日志管理</template>
           </el-menu-item>
 
-          <el-menu-item
+          <!-- 资产管理中心 -->
+          <!-- <el-menu-item
             v-if="authStore.isAdmin"
             index="/asset-management"
           >
             <el-icon><Money /></el-icon>
             <template #title>资产管理中心</template>
-          </el-menu-item>
+          </el-menu-item> -->
         </el-menu>
       </el-aside>
 
